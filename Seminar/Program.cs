@@ -18,7 +18,7 @@ else {
 
 85 -> 8*/
 
-int num = new Random().Next (10,100);
+/*int num = new Random().Next (10,100);
 string NumStr = num.ToString();
 if (NumStr.Length == 2) 
 {
@@ -29,7 +29,7 @@ if (NumStr.Length == 2)
     else {
         Console.WriteLine ($"Наибольшее число {NumStr[1]}");
     }
-}
+}*/
 
 
 
@@ -39,3 +39,11 @@ if (NumStr.Length == 2)
 34, 5 -> не кратно, остаток 4
 16, 4  -> кратно*/
 
+Console.Write("Введите число a=");
+int a = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите число b=");
+int b = int.Parse(Console.ReadLine()!);
+
+if (a%b == 0) Console.WriteLine($"Число {a} кратно {b}");
+else Console.WriteLine($"Число {a} не кратно {b}, остаток равен {a%b}");
